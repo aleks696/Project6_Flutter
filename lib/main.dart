@@ -93,13 +93,11 @@ class WidgetTree extends StatelessWidget {
 
 class ProductWidget extends StatelessWidget {
   final String name;
-
   const ProductWidget({required this.name});
-
+  
   @override
   Widget build(BuildContext context) {
-    final counter = Provider.of<CounterModel>(context);
-    
+    final counter = Provider.of<CounterModel>(context);    
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20),
       color: Colors.grey[300],
